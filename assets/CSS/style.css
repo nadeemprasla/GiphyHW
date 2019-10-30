@@ -1,9 +1,13 @@
+body {
+    background-color: lightgray;
+}
+
 .button {
     float: left;
     padding: 5px;
     margin: 10px;
-    background-color: gray;
-    color: white;
+    background-color: black;
+    color: yellow;
     font-weight: bold;
 }
 
@@ -11,7 +15,42 @@
     margin-bottom: 20px;
 }
 
-.imagesButton {
+.rating {
     float: left;
     margin: 10px;
+    font-size: 20px;
+}
+
+.imagesButton {
+    padding-top: 15px;
+}
+
+#addGame {
+    margin-top: 10px;
+}
+
+#searchInput {
+    margin-top: 10px;
+}
+
+#search {
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width: 950px) {
+    .searchbox {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .searchbox {
+        position: absolute;
+        /* float: right; */
+        right: 0;
+    }
 }
