@@ -78,9 +78,12 @@ $(document).ready(function() {
     $("#search").on("click", function(event) {
         event.preventDefault();
         var userInput = $("#searchInput").val().trim().toLowerCase();
-        topics.push(userInput);
-        $("#searchInput").val("");
-        renderButton();
+        if (userInput !== "") {
+
+            topics.push(userInput);
+            $("#searchInput").val("");
+            renderButton();
+        }
     })
 
     renderButton();
